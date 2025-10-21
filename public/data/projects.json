@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Meowl-as-a-Service",
+    "desc": "Meowl as a Service (MaaS) — JavaScript service",
+    "url": "https://github.com/pavelknespl/Meowl-as-a-Service",
+    "topics": ["javascript", "service"]
+  },
+  {
+    "name": "WindBoost",
+    "desc": "Minecraft windboost skript",
+    "url": "https://github.com/pavelknespl/WindBoost",
+    "topics": ["minecraft", "skript"]
+  }
+]

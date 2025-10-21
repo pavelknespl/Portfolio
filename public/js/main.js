@@ -19,16 +19,18 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	})
 });
 
-const projectsData = [
+// Local fallbacks (kept for offline / build-time fallback)
+let projectsData = [
 	{name:'Meowl-as-a-Service',desc:'Meowl as a Service (MaaS) — JavaScript service',url:'https://github.com/pavelknespl/Meowl-as-a-Service',topics:['javascript','service']},
 	{name:'WindBoost',desc:'Minecraft windboost skript',url:'https://github.com/pavelknespl/WindBoost',topics:['minecraft','skript']}
 ];
 
-const skillsData = ['Python','JavaScript','C','Lua','Bash','HTML5','CSS3','Node.js','Express','Flask','MySQL','Arduino','Raspberry Pi','Docker','Git'];
+let skillsData = ['Python','JavaScript','C','Lua','Bash','HTML5','CSS3','Node.js','Express','Flask','MySQL','Arduino','Raspberry Pi','Docker','Git'];
 
 function renderProjects(){
 	const grid = document.getElementById('projectsGrid');
-	if(!grid) return;
+	if(!grid || !projectsData) return;
+	grid.innerHTML = '';
 	projectsData.forEach(p=>{
 		const card = document.createElement('article');
 		card.className='card';
@@ -43,7 +45,8 @@ function renderProjects(){
 
 function renderSkills(){
 	const el = document.getElementById('skillsList');
-	if(!el) return;
+	if(!el || !skillsData) return;
+	el.innerHTML = '';
 	skillsData.forEach(s=>{
 		const span = document.createElement('div');
 		span.className='skill';
@@ -52,8 +55,24 @@ function renderSkills(){
 	})
 }
 
-renderProjects();
-renderSkills();
+// Try to fetch data from server API, fall back to local arrays on error
+async function loadDataAndRender(){
+	try{
+		const [pRes, sRes] = await Promise.all([
+			fetch('/api/projects'),
+			fetch('/api/skills')
+		]);
+		if(pRes.ok){ projectsData = await pRes.json(); }
+		if(sRes.ok){ skillsData = await sRes.json(); }
+	}catch(err){
+		// network error or server not available — keep local fallbacks
+		console.warn('Could not fetch API data, using local fallbacks', err);
+	}
+	renderProjects();
+	renderSkills();
+}
+
+loadDataAndRender();
 
 function adjustScrollPadding(){
 	const nav = document.getElementById('navbar');
