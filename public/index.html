@@ -1,11 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1></h1>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Pavel Knespl — Portfolio</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav" id="navbar">
+            <div class="nav-container">
+                <a class="brand" href="#home">Pavel Knespl</a>
+                <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="hero" id="home">
+            <div class="hero-inner container">
+                <div class="hero-left">
+                    <img class="avatar" src="../assets/avatar.png" alt="Pavel avatar" onerror="this.style.display='none'">
+                </div>
+                <div class="hero-right">
+                    <h1>Hi, I'm Pavel</h1>
+                    <p class="lead">I like building random stuff — web apps, scripts and small services. I enjoy learning new tech and tinkering with hardware.</p>
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="#projects">See projects</a>
+                        <a class="btn ghost" href="#contact">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section about" id="about">
+                <div class="container">
+                    <h2>About</h2>
+                    <p>
+                        I'm a developer based in Mladá Boleslav. I work with Python, JavaScript and C. I enjoy building tools,
+                        small services and experimenting with hardware like Arduino and Raspberry Pi.
+                    </p>
+                    <p>
+                        You can find my full GitHub profile <a href="https://github.com/pavelknespl" target="_blank" rel="noopener">here</a>.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section projects" id="projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <p class="muted">A selection of repositories from my GitHub.</p>
+                    <div class="grid" id="projectsGrid" aria-live="polite">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <p class="muted">Technologies I use and learn.</p>
+                    <div class="skills-list" id="skillsList" aria-live="polite">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© 2025 Pavel Knespl · <a href="https://github.com/pavelknespl" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
