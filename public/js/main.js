@@ -19,7 +19,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	})
 });
 
-// Local fallbacks (kept for offline / build-time fallback)
 let projectsData = [
 	{name:'Meowl-as-a-Service',desc:'Meowl as a Service (MaaS) — JavaScript service',url:'https://github.com/pavelknespl/Meowl-as-a-Service',topics:['javascript','service']},
 	{name:'WindBoost',desc:'Minecraft windboost skript',url:'https://github.com/pavelknespl/WindBoost',topics:['minecraft','skript']}
@@ -55,7 +54,6 @@ function renderSkills(){
 	})
 }
 
-// Try to fetch data from server API, fall back to local arrays on error
 async function loadDataAndRender(){
 	try{
 		const [pRes, sRes] = await Promise.all([
@@ -65,7 +63,6 @@ async function loadDataAndRender(){
 		if(pRes.ok){ projectsData = await pRes.json(); }
 		if(sRes.ok){ skillsData = await sRes.json(); }
 	}catch(err){
-		// network error or server not available — keep local fallbacks
 		console.warn('Could not fetch API data, using local fallbacks', err);
 	}
 	renderProjects();
