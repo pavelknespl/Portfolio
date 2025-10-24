@@ -107,3 +107,19 @@ window.addEventListener('resize', () => { setTimeout(adjustScrollPadding, 80); }
 		}
 	}, {passive:false});
 })();
+
+(function(){
+	const projects = document.getElementById('projects');
+	if(!projects) return;
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(e => {
+			const visible = e.intersectionRatio >= 0.5;
+			if(visible){
+				document.documentElement.classList.add('footer-visible');
+			} else {
+				document.documentElement.classList.remove('footer-visible');
+			}
+		});
+	}, { threshold: [0.5] });
+	observer.observe(projects);
+})();

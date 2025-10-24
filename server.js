@@ -9,7 +9,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 const projects = require('./public/data/projects.json');
 const skills = require('./public/data/skills.json');
 
-// API routes
 app.get('/api/projects', (req, res) => {
 	res.json(projects);
 });
