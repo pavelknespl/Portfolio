@@ -22,10 +22,7 @@ app.use((req, res, next) => {
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-if (require.main === module) {
-	app.listen(port, () => {
-		console.log(`Server listening on http://localhost:${port}`);
-	});
-} else {
-	module.exports = app;
-}
+app.listen(port, () => {
+	console.log(`Server listening on http://localhost:${port}`);
+});
+
