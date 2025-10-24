@@ -303,6 +303,78 @@ html.footer-visible .site-footer.section{
     visibility:visible;
 }
 
+.footer-inner{ 
+    display:flex; 
+    flex-direction:column; 
+    gap:12px; 
+    align-items:center; 
+}
+.contact-grid{ 
+    width:100%; 
+    max-width:760px; 
+    display:grid; 
+    grid-template-columns:repeat(2,1fr); 
+    gap:12px; 
+}
+.contact-item{ 
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+    padding:12px; 
+    border-radius:10px; 
+    text-decoration:none; 
+    color:var(--text); 
+    background:rgba(255,255,255,0.02); 
+    transition:transform .12s ease, background .12s ease; 
+}
+.contact-item svg{ 
+    width:28px; 
+    height:28px; 
+    flex-shrink:0; 
+    fill:var(--accent-2); 
+    opacity:0.95 
+}
+.contact-item span{ 
+    font-weight:600 
+}
+.contact-item:hover{ 
+    transform:translateY(-4px); 
+    background:var(--glass); 
+    color:var(--text) 
+}
+.footer-copy{ 
+    margin:6px 0 0; 
+    color:var(--muted); 
+    font-size:14px 
+}
+
+.footer-copy a{ 
+    display:inline-flex; 
+    align-items:center; 
+    gap:8px; 
+    color:var(--muted); 
+    text-decoration:none 
+}
+.footer-copy a svg{ 
+    width:18px; 
+    height:18px; 
+    flex-shrink:0; 
+    fill:var(--muted) 
+}
+.footer-copy a:hover svg{ 
+    fill:var(--text) 
+}
+
+@media (max-width:640px){
+    .contact-grid{ 
+        grid-template-columns:1fr 
+    }
+    .contact-item svg{ 
+        width:22px; 
+        height:22px 
+    }
+}
+
 @media (max-width:900px){
     .grid{
         grid-template-columns:repeat(2,1fr)

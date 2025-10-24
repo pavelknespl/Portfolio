@@ -3,12 +3,42 @@
     "name": "Meowl-as-a-Service",
     "desc": "Meowl as a Service (MaaS) — JavaScript service",
     "url": "https://github.com/pavelknespl/Meowl-as-a-Service",
-    "topics": ["javascript", "service"]
+    "topics": ["Javascript", "Saas", "Terminal"]
   },
   {
     "name": "WindBoost",
     "desc": "Minecraft windboost skript",
     "url": "https://github.com/pavelknespl/WindBoost",
-    "topics": ["minecraft", "skript"]
+    "topics": ["Minecraft", "Skript"]
+  },
+  {
+    "name": "Iq to Wav",
+    "desc": ".Iq to .Wav converter",
+    "url": "https://github.com/pavelknespl/Iq-to-WAV",
+    "topics": ["Python", "SDR"]
+  },
+  {
+    "name": "Terminal video player",
+    "desc": "ASCII video player in terminal",
+    "url": "https://github.com/pavelknespl/Terminal-video-player",
+    "topics": ["Python", "Video", "Terminal"]
+  },
+  {
+    "name": "Video to ASCII",
+    "desc": "Video to ASCII frames converter",
+    "url": "https://github.com/pavelknespl/Video-to-ASCII",
+    "topics": ["Python", "ASCII", "Video", "Image"]
+  },
+  {
+    "name": "Discord member search",
+    "desc": "Discord members search between servers",
+    "url": "https://github.com/pavelknespl/Discord-members-search",
+    "topics": ["Python", "Discord"]
+  },
+  {
+    "name": "Binary counting discord bot",
+    "desc": "Discord bot for binary counting",
+    "url": "https://github.com/pavelknespl/Binary-counting",
+    "topics": ["Python", "Discord", "Binary"]
   }
 ]
