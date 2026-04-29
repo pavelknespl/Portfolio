@@ -1,19 +1,19 @@
-name: my-better-t-app
+name: portfolio
 
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: my-better-t-app-postgres
+    container_name: portfolio-postgres
     environment:
-      POSTGRES_DB: my-better-t-app
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -21,7 +21,7 @@ services:
 
   app:
     image: oven/bun:latest
-    container_name: my-better-t-app-app
+    container_name: portfolio-app
     depends_on:
       postgres:
         condition: service_healthy
@@ -32,11 +32,12 @@ services:
       - "5173:5173"
       - "3000:3000"
     environment:
-      - DATABASE_URL=postgresql://postgres:password@postgres:5432/my-better-t-app
-      - CORS_ORIGIN=http://localhost:5173
-      - VITE_SERVER_URL=http://localhost:3000
+      - DATABASE_URL=${DATABASE_URL}
+      - CORS_ORIGIN=${CORS_ORIGIN}
+      - VITE_SERVER_URL=${VITE_SERVER_URL}
+      - NODE_ENV=production
     command: >
-      sh -c "bun install && bun run db:push && bun run dev"
+      sh -c "bun install && bun run db:push && bun run build && bun run start"
 
 volumes:
   postgres_data:

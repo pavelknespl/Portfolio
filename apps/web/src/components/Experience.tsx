@@ -6,7 +6,7 @@ export default function Experience() {
         Professional Experience
       </h2>
       <div className="relative border-l border-white/10 ml-4 md:ml-6 space-y-12">
-        {/* Item 1 */}
+
         <div className="relative pl-8 md:pl-12 group">
           <div className="absolute -left-[5px] top-3 w-[9px] h-[9px] rounded-full bg-primary-container border-2 border-surface-container-lowest group-hover:scale-150 transition-transform duration-300"></div>
           <div className="glass-card rounded-xl p-8 border border-white/5 glow-hover">
@@ -31,7 +31,7 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        {/* Item 2 */}
+
         <div className="relative pl-8 md:pl-12 group">
           <div className="absolute -left-[5px] top-3 w-[9px] h-[9px] rounded-full bg-surface-variant border-2 border-surface-container-lowest group-hover:bg-primary-container group-hover:scale-150 transition-all duration-300"></div>
           <div className="glass-card rounded-xl p-8 border border-white/5 glow-hover">
@@ -49,7 +49,7 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        {/* Item 3 */}
+
         <div className="relative pl-8 md:pl-12 group">
           <div className="absolute -left-[5px] top-3 w-[9px] h-[9px] rounded-full bg-surface-variant border-2 border-surface-container-lowest group-hover:bg-primary-container group-hover:scale-150 transition-all duration-300"></div>
           <div className="glass-card rounded-xl p-8 border border-white/5 glow-hover">

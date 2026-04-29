@@ -6,7 +6,7 @@ export default function Projects() {
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Project 1 */}
+
         <a href="https://github.com/Libre-SkolaOnline/API-docs" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-8 border border-white/5 glow-hover flex flex-col relative overflow-hidden group">
           <div className="flex justify-between items-start mb-4">
             <span className="text-primary-container font-mono-label text-xs tracking-[0.15em] uppercase">API Documentation</span>
@@ -20,7 +20,7 @@ export default function Projects() {
             <span className="px-3 py-1 bg-transparent border border-primary-container/30 text-primary-container text-xs rounded-sm font-mono-label">HTML</span>
           </div>
         </a>
-        {/* Project 2 */}
+
         <a href="https://github.com/pavelknespl/TerraDiscord" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-8 border border-white/5 glow-hover flex flex-col relative overflow-hidden group">
           <div className="flex justify-between items-start mb-4">
             <span className="text-primary-container font-mono-label text-xs tracking-[0.15em] uppercase">Infrastructure as Code</span>
@@ -34,7 +34,7 @@ export default function Projects() {
             <span className="px-3 py-1 bg-transparent border border-primary-container/30 text-primary-container text-xs rounded-sm font-mono-label">JSON</span>
           </div>
         </a>
-        {/* Project 3 */}
+
         <a href="https://github.com/pavelknespl/Meowl-as-a-Service" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-8 border border-white/5 glow-hover flex flex-col relative overflow-hidden group">
           <div className="flex justify-between items-start mb-4">
             <span className="text-primary-container font-mono-label text-xs tracking-[0.15em] uppercase">Terminal Service</span>
@@ -48,7 +48,7 @@ export default function Projects() {
             <span className="px-3 py-1 bg-transparent border border-primary-container/30 text-primary-container text-xs rounded-sm font-mono-label">CURL</span>
           </div>
         </a>
-        {/* Project 4 */}
+
         <a href="https://github.com/Libre-SkolaOnline/CLI" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-8 border border-white/5 glow-hover flex flex-col relative overflow-hidden group">
           <div className="flex justify-between items-start mb-4">
             <span className="text-primary-container font-mono-label text-xs tracking-[0.15em] uppercase">TUI Application</span>

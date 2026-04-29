@@ -6,7 +6,7 @@ export default function Achievements() {
         Achievements
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Item 1: Kybersoutěž */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
@@ -16,7 +16,7 @@ export default function Achievements() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Won czech national cybersecurity competition 2025 in highschool category and I finished 5th overall.</p>
           </div>
         </div>
-        {/* Item 2: Haxagon 2026 */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
@@ -26,7 +26,7 @@ export default function Achievements() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Qualified to Haxagon skirmish finals.</p>
           </div>
         </div>
-        {/* Item 3: Haxagon SČ */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
@@ -36,7 +36,7 @@ export default function Achievements() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Won Haxagon skirmish SČ 2025 competition.</p>
           </div>
         </div>
-        {/* Item 4: Haxagon 2025 */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
@@ -46,7 +46,7 @@ export default function Achievements() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Participated in Haxagon skirmish 2025 competition and finished 7th place.</p>
           </div>
         </div>
-        {/* Item 5: TryHackMe */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
@@ -56,7 +56,7 @@ export default function Achievements() {
             <p className="font-body-sm text-body-sm text-on-surface-variant">Currently 14th place in the TryHackMe leaderboard in Czech Republic and top 2500 in world.</p>
           </div>
         </div>
-        {/* Item 6: TourDeApp */}
+
         <div className="glass-card rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group glow-hover transition-all duration-500 min-h-[350px]">
           <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-surface-variant/20 z-0"></div>
