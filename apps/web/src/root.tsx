@@ -44,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               "@type": "Person",
               name: "Pavel Knespl",
               jobTitle: "Cybersecurity Specialist & Backend Developer",
-              url: "https://pavelknespl.cz",
+              url: "https://pavelknespl.me",
               sameAs: [
                 "https://github.com/pavelknespl",
                 "https://www.linkedin.com/in/pavelknespl/",

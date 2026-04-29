@@ -13,15 +13,15 @@ export function meta({}: Route.MetaArgs) {
     { name: "author", content: "Pavel Knespl" },
     { name: "robots", content: "index, follow" },
 
-    { tagName: "link", rel: "canonical", href: "https://pavelknespl.cz/" },
-    { tagName: "link", rel: "alternate", hrefLang: "en", href: "https://pavelknespl.cz/" },
-    { tagName: "link", rel: "alternate", hrefLang: "cs", href: "https://pavelknespl.cz/" },
-    { tagName: "link", rel: "alternate", hrefLang: "x-default", href: "https://pavelknespl.cz/" },
+    { tagName: "link", rel: "canonical", href: "https://pavelknespl.me/" },
+    { tagName: "link", rel: "alternate", hrefLang: "en", href: "https://pavelknespl.me/" },
+    { tagName: "link", rel: "alternate", hrefLang: "cs", href: "https://pavelknespl.me/" },
+    { tagName: "link", rel: "alternate", hrefLang: "x-default", href: "https://pavelknespl.me/" },
 
     { property: "og:type", content: "website" },
     { property: "og:title", content: "Pavel Knespl - Cybersecurity & Backend Development" },
     { property: "og:description", content: "Cybersecurity specialist and backend developer. Kybersoutěž 2025 winner, TryHackMe top 2500." },
-    { property: "og:url", content: "https://pavelknespl.cz/" },
+    { property: "og:url", content: "https://pavelknespl.me/" },
     { property: "og:site_name", content: "Pavel Knespl" },
     { property: "og:locale", content: "en_US" },
 
