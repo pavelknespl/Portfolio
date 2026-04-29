@@ -33,8 +33,36 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0a0a0a" />
         <Meta />
         <Links />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Pavel Knespl",
+              jobTitle: "Cybersecurity Specialist & Backend Developer",
+              url: "https://pavelknespl.cz",
+              sameAs: [
+                "https://github.com/pavelknespl",
+                "https://www.linkedin.com/in/pavelknespl/",
+                "https://tryhackme.com/p/capyplivl",
+              ],
+              knowsAbout: [
+                "Cybersecurity",
+                "Penetration Testing",
+                "Backend Development",
+                "Node.js",
+                "Python",
+                "TypeScript",
+                "Docker",
+                "Network Security",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="bg-surface-container-lowest text-on-surface font-body-lg min-h-screen selection:bg-primary-container selection:text-white">
         {children}
