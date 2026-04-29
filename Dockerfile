@@ -1,0 +1,5 @@
+FROM node:20-alpine
+
+RUN npm install -g bun@1.3.11
+
+WORKDIR /app
