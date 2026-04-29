@@ -5,7 +5,7 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "serve -s ./build/client -l 5173",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -13,7 +13,7 @@
     "@my-better-t-app/ui": "workspace:*",
     "@react-router/fs-routes": "^7.14.1",
     "@react-router/node": "^7.14.1",
-    "@react-router/serve": "^7.14.1",
+    "serve": "^14.2.4",
     "dotenv": "catalog:",
     "isbot": "^5.1.39",
     "lucide-react": "^1.8.0",
