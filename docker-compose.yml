@@ -37,7 +37,7 @@ services:
       - VITE_SERVER_URL=${VITE_SERVER_URL}
       - NODE_ENV=production
     command: >
-      sh -c "bun install && bun run db:push && cd apps/web && node ../../node_modules/.bin/react-router build && cd ../.. && bun run --filter server build && bun run start"
+      sh -c "bun install && bun run db:push && cd apps/web && node ./node_modules/.bin/react-router build && cd ../.. && bun run --filter server build && bun run start"
 
 volumes:
   postgres_data:
